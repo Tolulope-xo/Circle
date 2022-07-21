@@ -16,7 +16,10 @@ const Message = () => {
       <h4>Want to be aware of all update</h4>
       <img className="shadow5" src={shadow} alt="shadow" />
           <form className="text" onSubmit={handleSubmit}>
-            <input type="email" value={Name} placeholder="" 
+            <input 
+            type="email" 
+            value={Name} 
+            placeholder="" 
             onChange={(e) => setName(e.target.value)}/>
             <button type="submit" onClick={handleSubmit}>Subscribe</button>
           </form>
