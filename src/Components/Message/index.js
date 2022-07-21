@@ -3,7 +3,7 @@ import Button from "../Button";
 import shadow from "../assets/Ellipse.png"
 import './index.scss'
 const Message = () => {
-  const [message, setMessage] = useState("");
+  const [message] = useState("");
 
   return (
     <div className="blur">
@@ -15,11 +15,7 @@ const Message = () => {
           <input
             type="text"
             value={message}
-            placeholder=""
-            onChange={e => {
-              const newMessageObj = { message: e.target.value };
-              // setMessage(newMessageObj); // Now it works
-            }}          />
+            placeholder=""/>
           <p>
             <strong>{message}</strong>
           </p>
