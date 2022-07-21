@@ -1,4 +1,6 @@
 .button {
+    cursor: pointer !important;
+
   width: 215px;
   border: 1px solid white;
   border-radius: 20px;
@@ -11,7 +13,6 @@
   text-align: center;
   align-items: center;
   padding: 15px 25px;
-  cursor: pointer !important;
   
 }
 
@@ -20,5 +21,7 @@
     cursor: pointer !important;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer !important;
+
   }
 }

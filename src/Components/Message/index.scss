@@ -19,10 +19,10 @@
     line-height: 44px;
     letter-spacing: 0em;
     text-align: center;
-   padding-top: 2rem;
-   padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
   }
-  .shadow5{
+  .shadow5 {
     // width: 20rem;
     position: absolute;
     top: -13rem;
@@ -30,8 +30,8 @@
   }
   .text {
     display: flex;
-    z-index: 10;
-    justify-content: space-between;
+    // z-index: 10;
+    // justify-content: space-between;
     align-items: center !important;
     width: 42rem;
     margin: auto;
@@ -42,8 +42,25 @@
       border-radius: 5px;
       height: 53px;
     }
+
+    button {
+      cursor: pointer !important;
+      width: 215px;
+      border: 1px solid white;
+      border-radius: 20px;
+      background-color: #73fdaa;
+      color: black;
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      height: 53px;
+      text-align: center;
+      align-items: center;
+      padding: 15px 25px;
+    }
   }
-  .shadow6{
+  .shadow6 {
     // width: 20rem;
     position: absolute;
     top: -5rem;
@@ -64,7 +81,8 @@
       text-align: center;
       margin-bottom: 1rem;
     }
-    .shadow5, .shadow6{
+    .shadow5,
+    .shadow6 {
       display: none;
     }
     .text {
@@ -97,7 +115,8 @@
       text-align: center;
       margin-bottom: 1rem;
     }
-    .shadow5, .shadow6{
+    .shadow5,
+    .shadow6 {
       display: none;
     }
     .text {
