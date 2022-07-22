@@ -10,7 +10,6 @@
     .quick,
     .quick2,
     .quick3 {
-      // width: 15rem;
       text-align: left;
       h3 {
         @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
@@ -46,7 +45,7 @@
     }
 
     .quick4 {
-              position: relative;
+      position: relative;
 
       p {
         @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
@@ -71,6 +70,7 @@
   .footer {
     border-top: none;
     height: 45rem;
+
     .footer1 {
       display: block;
       margin: auto;
@@ -114,15 +114,15 @@
 
       .quick4 {
         position: relative;
-        
+
         p {
           left: 0rem;
 
           font-size: 20px;
-        font-weight: 500;
-        text-align: center;
-        align-items: center;
-        margin: auto;
+          font-weight: 500;
+          text-align: center;
+          align-items: center;
+          margin: auto;
         }
       }
     }
@@ -181,16 +181,15 @@
 
       .quick4 {
         position: relative;
-        
 
         p {
           left: 0rem;
 
           font-size: 20px;
-        font-weight: 500;
-        text-align: center;
-        align-items: center;
-        margin: auto;
+          font-weight: 500;
+          text-align: center;
+          align-items: center;
+          margin: auto;
         }
       }
     }
@@ -199,6 +198,11 @@
       margin: auto;
       justify-content: space-evenly;
     }
+  }
+}
+@media (min-width: 901px) and (max-width: 1024px) {
+  .footer {
+    overflow: hidden;
   }
 }
 

@@ -1,9 +1,25 @@
-import React from "react";
+import React from "react"
+import { gsap } from "gsap";
+
 import Button from "../Button";
 import illustration1 from "../assets/Modern.png";
 import shadow from "../assets/Ellipse.png";
 import "./index.scss"
-function Onboarding() {
+const { useEffect, useRef } = React;
+
+const Onboarding = () => {
+  const bigimageRef = useRef();
+  
+  useEffect(() => {
+    
+    gsap.to(bigimageRef.current, {
+      y: 100,
+    stagger: 0.33,
+    repeat: -1,
+    repeatDelay: 1,
+    yoyo: true
+    }, );
+  }, []);
   return (
     <div className="container Onboarding">
       <div className="Board1">
@@ -16,7 +32,7 @@ function Onboarding() {
         </div>
       </div>
       <div className="Board2">
-      <img className="bigimage" src={illustration1} alt="an illustration"/> 
+      <img className="bigimage" ref={bigimageRef} src={illustration1} alt="an illustration"/> 
       <img className="shadow1" src={shadow} alt="shadow"/>
 
       </div>

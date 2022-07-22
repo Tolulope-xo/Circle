@@ -1,3 +1,4 @@
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -8,7 +9,8 @@ import linkedin1 from "../assets/social.svg"
 import discord1 from "../assets/Group 1.svg"
 import telegram1 from "../assets/duotone.svg"
 import "./index.scss"
-function Navigation() {
+const Navigation = () => {
+  
   return (
     <Navbar className="Navbar" expand="lg">
       <Container>

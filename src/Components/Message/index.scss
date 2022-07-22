@@ -70,6 +70,7 @@
 
 @media only screen and (max-width: 480px) {
   .blur {
+
     width: 22rem;
     height: 13rem;
     margin-top: 2rem;
@@ -107,6 +108,7 @@
 }
 @media (min-width: 481px) and (max-width: 900px) {
   .blur {
+
     width: 30rem;
     height: 13rem;
     margin-top: 2rem;
@@ -138,5 +140,11 @@
       }
      
     }
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .blur {
+  overflow: hidden;
   }
 }
