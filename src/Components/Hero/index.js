@@ -4,10 +4,15 @@ import Rectangle from "../Rectangle";
 import shape from "../assets/Illustration.png"
 import shadow from "../assets/Ellipse.png"
 import './index.scss'
+import Aos from "aos";
+import "aos/dist/aos.css";
   const { useEffect, useRef } = React;
 
   const Hero = () => {
     const shadow2Ref = useRef();
+    useEffect(() => {
+      Aos.init({});
+    }, []); 
     
     useEffect(() => {
       
@@ -19,6 +24,7 @@ import './index.scss'
       yoyo: true
       }, );
     }, []);
+
   return (
     <div className=" container hero3">
     <img className="shadow2" ref={shadow2Ref} src={shadow} alt="shadow"/>
@@ -26,11 +32,11 @@ import './index.scss'
       <p className="heroes">Web3 is the latest efficient technology</p>
       <img className="shadow3" src={shadow} alt="shadow"/>
       <div className="hero">
-      <div className="hero1">
+      <div className="hero1" data-aos="zoom-in" data-aos-duration="800">
       <img src ={shape} alt=""/>
       </div>
       <div className="hero2">
-      <Rectangle
+      <Rectangle 
       h5= "Access Token Market"
       p="Buy and sell token anytime
       and anywhere"

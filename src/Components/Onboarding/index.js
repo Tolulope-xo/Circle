@@ -5,11 +5,16 @@ import Button from "../Button";
 import illustration1 from "../assets/Modern.png";
 import shadow from "../assets/Ellipse.png";
 import "./index.scss"
+import Aos from "aos";
+import "aos/dist/aos.css";
 const { useEffect, useRef } = React;
 
 const Onboarding = () => {
   const bigimageRef = useRef();
-  
+  useEffect(() => {
+    Aos.init({});
+  }, []); 
+
   useEffect(() => {
     
     gsap.to(bigimageRef.current, {
@@ -22,7 +27,7 @@ const Onboarding = () => {
   }, []);
   return (
     <div className="container Onboarding">
-      <div className="Board1">
+      <div data-aos="fade-right" data-aos-duration="700" className="Board1">
         <img className="shadow" src={shadow} alt="shadow"/>
         <h2>Save, Buy and Sell Your blockchain asset</h2>
         <p className="Boardp">The easy to manage and trade your cryptocurency asset</p>

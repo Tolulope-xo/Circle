@@ -1,23 +1,17 @@
 import React from "react";
-import { gsap } from "gsap";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "./index.scss";
-function Rectangle(props) {
-  const { useEffect, useRef } = React;
+const { useEffect} = React;
 
-  const el = useRef();
-  const q = gsap.utils.selector(el);
+const Rectangle = (props)=> {
   useEffect(() => {
-  gsap.to(q(".rectangle"), {
-    y: 100,
-    stagger: 0.33,
-    repeat: -1,
-    repeatDelay: 1,
-    yoyo: true
-  });
-}, []);
+    Aos.init({});
+  }, []); 
+  
   return (
-    <div className="container rectangle" ref={el}>
+    <div data-aos="fade-up-left" data-aos-duration="800" className="container rectangle">
       <h5>{props.h5}</h5>
       <p>{props.p}</p>
     </div>
