@@ -27,7 +27,7 @@ const Onboarding = () => {
   }, []);
   return (
     <div className="container Onboarding">
-      <div data-aos="fade-right" data-aos-duration="700" className="Board1">
+      <div data-aos="fade-right" data-aos-duration="900" className="Board1">
         <img className="shadow" src={shadow} alt="shadow"/>
         <h2>Save, Buy and Sell Your blockchain asset</h2>
         <p className="Boardp">The easy to manage and trade your cryptocurency asset</p>
